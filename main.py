@@ -40,3 +40,5 @@ def blackjack_game(deck):
         player_cards.append(player_card)
         # (Line below) .remove() method removes the first item of the value of the argument
         deck.remove(player_card)
+
+        # TODO (Continue from here...)
