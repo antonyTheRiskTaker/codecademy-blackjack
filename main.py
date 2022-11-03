@@ -27,6 +27,14 @@ def main():
     ''')
 
     # TODO: continue from here
+    money = 5000
+    while True: # Main game loop
+        # Check if the player has run out of money:
+        if money <= 0:
+            print("You're broke!")
+            print("Good thing you weren't playing with real money.")
+            print('Thanks for playing!')
+            sys.exit()
 
 # If the programme is run (instead of imported), run the game:
 if __name__ == '__main__':
