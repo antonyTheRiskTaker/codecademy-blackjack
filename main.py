@@ -1,44 +1,33 @@
-from card import Card
-import card_value
+'''Blackjack, inspired by Al Sweigart al@inventwithpython.com
+Also known as 21 (This version doesn't have splitting or insurance.)'''
 
-# The deck of cards
-deck = []
+import random, sys
 
-# (Lines below) logic to generate 52 playing cards
+# Set up the constants
+HEARTS = chr(9829)
+DIAMONDS = chr(9830)
+SPADES = chr(9824)
+CLUBS = chr(9827)
+BACKSIDE = 'backside'
 
-# Loop for every type of suit
-for suit in card_value.suits:
+def main():
+    print('''Blackjack, inspired by Al Sweigart al@inventwithpython.com
 
-    # Loop for every type of card in a suit
-    for card in card_value.cards:
+    Rules:
+      Try to get as close to 21 without going over.
+      Kings, Queens, and Jacks are worth 10 points.
+      Aces are worth 1 or 11 points.
+      Cards 2 through 10 are worth their face value.
+      (H)it to take another card.
+      (S)tand to stop taking cards.
+      On your first play, you can (D)ouble down to increase you bet
+      but must hit exactly one more time before standing.
+      In the case of a tie, the bet is returned to the player.
+      The dealer stops hitting at 17.
+    ''')
 
-        # Adding card to the deck
-        deck.append(Card(card_value.suits_values[suit], card, card_value.cards_values[card]))
+    # TODO: continue from here
 
-# (Lines below) test if playing cards are properly created in the deck
-# print(deck)
-# print(len(deck))
-
-def blackjack_game(deck):
-    '''Function for a single game of blackjack'''
-    global cards_values
-
-    # Cards for both dealer and player
-    player_cards = []
-    dealer_cards = []
-
-    # Scores for both dealer and player
-    player_score = 0
-    dealer_score = 0
-
-    # Initial dealing for player and dealer
-    while len(player_cards) < 2:
-
-        # Randomly dealing a card
-        # (Line below) choice method of the random library returns a random element from the deck list
-        player_card = random.choice(deck)
-        player_cards.append(player_card)
-        # (Line below) .remove() method removes the first item of the value of the argument
-        deck.remove(player_card)
-
-        # TODO (Continue from here...)
+# If the programme is run (instead of imported), run the game:
+if __name__ == '__main__':
+    main()
