@@ -3,6 +3,8 @@ Also known as 21 (This version doesn't have splitting or insurance.)'''
 
 import random, sys
 
+from get_bet import getBet
+
 # Set up the constants
 HEARTS = chr(9829)
 DIAMONDS = chr(9830)
@@ -26,7 +28,6 @@ def main():
       The dealer stops hitting at 17.
     ''')
 
-    # TODO: continue from here
     money = 5000
     while True: # Main game loop
         # Check if the player has run out of money:
@@ -39,6 +40,9 @@ def main():
         # Let the player enter their bet for this round:
         print('Money:', money)
         bet = getBet(money)
+
+        # TODO: continue from here
+
 
 # If the programme is run (instead of imported), run the game:
 if __name__ == '__main__':
