@@ -35,6 +35,10 @@ def main():
             print("Good thing you weren't playing with real money.")
             print('Thanks for playing!')
             sys.exit()
+        
+        # Let the player enter their bet for this round:
+        print('Money:', money)
+        bet = getBet(money)
 
 # If the programme is run (instead of imported), run the game:
 if __name__ == '__main__':
