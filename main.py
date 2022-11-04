@@ -4,12 +4,9 @@ Also known as 21 (This version doesn't have splitting or insurance.)'''
 import random, sys
 
 from get_bet import getBet
+from get_deck import getDeck
 
 # Set up the constants
-HEARTS = chr(9829)
-DIAMONDS = chr(9830)
-SPADES = chr(9824)
-CLUBS = chr(9827)
 BACKSIDE = 'backside'
 
 def main():
@@ -40,6 +37,11 @@ def main():
         # Let the player enter their bet for this round:
         print('Money:', money)
         bet = getBet(money)
+
+        # Give the dealer and player two cards from the deck each:
+        deck = getDeck()
+        dealerHand = [deck.pop(), deck.pop()]
+        playerHand = [deck.pop(), deck.pop()]
 
         # TODO: continue from here
 
