@@ -5,6 +5,7 @@ import random, sys
 
 from get_bet import getBet
 from get_deck import getDeck
+from display_hands import displayHands
 
 # Set up the constants
 BACKSIDE = 'backside'
@@ -43,7 +44,14 @@ def main():
         dealerHand = [deck.pop(), deck.pop()]
         playerHand = [deck.pop(), deck.pop()]
 
-        # TODO: continue from here
+        # Handle player actions:
+        print('Bet:', bet)
+        while True: # Keep looping until player stands or busts.
+            displayHands(playerHand, dealerHand, False)
+            print()
+
+            # Check if the player has bust:
+            # TODO: continue from here
 
 
 # If the programme is run (instead of imported), run the game:
