@@ -5,7 +5,9 @@ import random, sys
 
 from get_bet import getBet
 from get_deck import getDeck
+from get_hand_value import getHandValue
 from display_hands import displayHands
+from get_move import getMove
 
 # Set up the constants
 BACKSIDE = 'backside'
@@ -51,6 +53,13 @@ def main():
             print()
 
             # Check if the player has bust:
+            if getHandValue(playerHand) > 21:
+                break
+
+            # Get the player's move, either H, S, or D:
+            move = getMove(playerHand, money - bet)
+
+            # Handle the player actions:
             # TODO: continue from here
 
 
