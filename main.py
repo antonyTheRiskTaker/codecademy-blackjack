@@ -60,7 +60,32 @@ def main():
             move = getMove(playerHand, money - bet)
 
             # Handle the player actions:
-            # TODO: continue from here
+            if move == 'D':
+                # Player is doubling down, they can increase their bet:
+                additionalBet = getBet(min(bet, (money - bet)))
+                bet += additionalBet
+                print(f'Bet increased to {bet}.')
+                print(f'Bet:', bet)
+            
+            #* (Line below) equivalent of 
+            #* `if move == 'H' or move == 'D'`
+            if move in ('H', 'D'):
+                # Hit/doubling down take another card.
+                newCard = deck.pop()
+                rank, suit = newCard
+                print(f'You drew a {rank} of {suit}.')
+                playerHand.append(newCard)
+
+                if getHandValue(playerHand) > 21:
+                    # The player has busted:
+                    continue
+
+            if move in ('S', 'D'):
+                # Stand/doubling down stops the player's turn.
+                break
+
+        # Handle the dealer's actions:
+        # TODO: continue from here
 
 
 # If the programme is run (instead of imported), run the game:
