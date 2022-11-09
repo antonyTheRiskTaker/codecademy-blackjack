@@ -13,6 +13,7 @@ def getHandValue(cards):
         else:
             value += int(rank) # Numbered cards are worth their number
     
+    # Check out this link for how to count value of aces: https://qr.ae/pvByWx
     # Add the value for the aces:
     value += numberOfAces # Add 1 per ace.
     for i in range(numberOfAces):
