@@ -1,10 +1,12 @@
 import random
 
+import constants
+
 # Set up the suit constants
-HEARTS = chr(9829)
-DIAMONDS = chr(9830)
-SPADES = chr(9824)
-CLUBS = chr(9827)
+# HEARTS = chr(9829)
+# DIAMONDS = chr(9830)
+# SPADES = chr(9824)
+# CLUBS = chr(9827)
 
 #! Later we will try to rewrite the code applying OOP
 # class Card:
@@ -20,9 +22,9 @@ CLUBS = chr(9827)
 def getDeck():
     '''Return a list of (rank, suit) tuples for all 52 cards.'''
     deck = []
-    for suit in (HEARTS, DIAMONDS, SPADES, CLUBS):
+    for suit in (constants.HEARTS, constants.DIAMONDS, constants.SPADES, constants.CLUBS):
         for rank in range(2, 11):
-            deck.append((str(suit), rank))  # Add the numbered cards.
+            deck.append((str(rank), suit))  # Add the numbered cards.
         for rank in ('J', 'Q', 'A', 'K'):
             deck.append((rank, suit))  # Add the face and ace cards.
     random.shuffle(deck)
