@@ -1,10 +1,12 @@
+import constants
+
 def displayCards(cards):
     '''Display all the cards in the cards list.'''
     rows = ['' for _ in range(5)] # The text to display on each row.
     
     for i, card in enumerate(cards):
         rows[0] += ' ___  ' # Print the top line of the card.
-        if card == BACKSIDE:
+        if card == constants.BACKSIDE:
             # Print a card's back:
             rows[1] += '|## | '
             rows[2] += '|###| '
