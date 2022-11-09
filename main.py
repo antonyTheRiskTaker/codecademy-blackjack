@@ -1,16 +1,13 @@
 '''Blackjack, inspired by Al Sweigart al@inventwithpython.com
 Also known as 21 (This version doesn't have splitting or insurance.)'''
 
-import random, sys
+import sys
 
 from get_bet import getBet
 from get_deck import getDeck
 from get_hand_value import getHandValue
 from display_hands import displayHands
 from get_move import getMove
-
-# Set up the constants
-BACKSIDE = 'backside'
 
 def main():
     print('''Blackjack, inspired by Al Sweigart al@inventwithpython.com
