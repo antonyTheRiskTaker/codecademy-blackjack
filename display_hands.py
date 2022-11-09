@@ -1,3 +1,4 @@
+import constants
 from get_hand_value import getHandValue
 from display_cards import displayCards
 
@@ -11,7 +12,7 @@ def displayHands(playerHand, dealerHand, showDealerHand):
         print('DEALER: ???')
         # Hide the dealer's first card:
         #* (Line below) list concatenation applied
-        displayCards([BACKSIDE] + dealerHand[1:])
+        displayCards([constants.BACKSIDE] + dealerHand[1:])
     
     # Show the player's cards:
     print('PLAYER:', getHandValue(playerHand))
