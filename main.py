@@ -85,7 +85,39 @@ def main():
                 break
 
         # Handle the dealer's actions:
-        # TODO: continue from here
+        if getHandValue(playerHand) <= 21:
+            while getHandValue(dealerHand) <= 17:
+                # The dealer hits:
+                print('Dealer hits...')
+                dealerHand.append(deck.pop())
+                displayHands(playerHand, dealerHand, False)
+
+                if getHandValue(dealerHand) > 21:
+                    break # The dealer has busted.
+                input('Press Enter to continue...')
+                print('\n\n')
+
+        # Show the final hands:
+        displayHands(playerHand, dealerHand, True)
+
+        playerValue = getHandValue(playerHand)
+        dealerValue = getHandValue(dealerHand)
+        # Handle whether the player won, lost, or tied:
+        if dealerValue > 21:
+            print(f'Dealer busts! You win ${bet}')
+            money += bet
+        elif (playerValue > 21) or (playerValue < dealerValue):
+            print('You lost!')
+            money -= bet
+        elif playerValue > dealerValue:
+            print(f'You won ${bet}!')
+            money += bet
+        elif playerValue == dealerValue:
+            print("It's a tie, the bet is returned to you.")
+        
+        input('Press Enter to continue...')
+        print('\n\n')
+
 
 
 # If the programme is run (instead of imported), run the game:
