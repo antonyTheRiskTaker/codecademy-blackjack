@@ -1,5 +1,3 @@
- # import sys #! Remove this import when testing the whole game.
-
 def getBet(maxBet):
     '''Ask the player how much they want to bet for this round.'''
     while True: # Keep asking until they enter a valid amount.
