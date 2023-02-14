@@ -3,7 +3,7 @@ Also known as 21 (This version doesn't have splitting or insurance.)'''
 
 import sys
 
-from print_rules import print_rules
+import print_rules
 from get_bet import getBet
 from get_deck import getDeck
 from get_hand_value import getHandValue
@@ -11,7 +11,7 @@ from display_hands import displayHands
 from get_move import getMove
 
 def main():
-    print_rules()    
+    print_rules.print_rules()    
 
     money = 5000
     while True: # Main game loop
