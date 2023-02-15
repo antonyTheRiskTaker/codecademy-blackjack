@@ -29,6 +29,7 @@ def main():
         dealerHand = [deck.pop(), deck.pop()]
         playerHand = [deck.pop(), deck.pop()]
 
+        # TODO: start your code explanation here
         # Handle player actions:
         print('Bet:', bet)
         while True: # Keep looping until player stands or busts.
