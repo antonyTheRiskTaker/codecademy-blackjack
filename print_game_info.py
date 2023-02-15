@@ -13,3 +13,11 @@ def print_rules():
       In the case of a tie, the bet is returned to the player.
       The dealer stops hitting at 17.
     ''')
+
+def print_broke_message():
+    print(
+    "You're broke!",
+    "Good thing you weren't playing with real money.",
+    "Thanks for playing!",
+    sep="\n"
+    )

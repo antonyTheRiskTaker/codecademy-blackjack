@@ -3,7 +3,7 @@ Also known as 21 (This version doesn't have splitting or insurance.)'''
 
 import sys
 
-import print_rules
+import print_game_info
 from get_bet import getBet
 from get_deck import getDeck
 from get_hand_value import getHandValue
@@ -11,15 +11,13 @@ from display_hands import displayHands
 from get_move import getMove
 
 def main():
-    print_rules.print_rules()    
+    print_game_info.print_rules()    
 
     money = 5000
     while True: # Main game loop
         # Check if the player has run out of money:
         if money <= 0:
-            print("You're broke!")
-            print("Good thing you weren't playing with real money.")
-            print('Thanks for playing!')
+            print_game_info.print_broke_message()
             sys.exit()
         
         # Let the player enter their bet for this round:
