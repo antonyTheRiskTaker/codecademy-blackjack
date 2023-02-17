@@ -10,3 +10,12 @@ Since the purpose of this blackjack project is to learn some foundamental softwa
 To keep the game simple, this programme only allows you to play against a computer-controlled dealer.
 
 Once the game is run, it brings you into a main game loop. As long as no game-ending logic is triggered, the game continues. The first conditional checks if you have run out of cash to carry on playing. By default you have 5000 to play with at the start of the game. 
+
+## Structure of the code
+The code of the blackjack CLI game is made up of the following modules/functions:
+1. `print_game_info`
+2. `getBet()`
+3. `getDeck()`
+4. `getHandValue()`
+5. `displayHands()`
+6. `getMove()`
