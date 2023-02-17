@@ -13,9 +13,21 @@ Once the game is run, it brings you into a main game loop. As long as no game-en
 
 ## Structure of the code
 The code of the blackjack CLI game is made up of the following modules/functions:
-1. `print_game_info`
-2. `getBet()`
-3. `getDeck()`
-4. `getHandValue()`
-5. `displayHands()`
-6. `getMove()`
+1. `sys`
+2. `print_game_info`
+3. `getBet()`
+4. `getDeck()`
+5. `getHandValue()`
+6. `displayHands()`
+7. `getMove()`
+
+## What does each of these modules/functions do?
+
+### sys
+For the context of this project, the module from the standard library is used to
+exit the programme when conditions of certain scenarios in the game is met.
+
+### print_game_info
+The module contains several functions that simply print out game information
+messages, so the code in the entry point `main.py` is made cleaner and easier
+to navigate.
