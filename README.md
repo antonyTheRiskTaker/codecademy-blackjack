@@ -40,3 +40,10 @@ exit the programme when conditions of certain scenarios in the game is met.
 The module contains several functions that simply print out game information
 messages, so the code in the entry point `main.py` is made cleaner and easier
 to navigate.
+
+`getBet()`
+This function takes one input: the money the player has (5000 default). The code
+inside asks the player for the amount he wants to bet for a round of blackjack
+game. Checks are made to make sure the player doesn't enter anything other than
+integers. It also prevents the player can't bet more than he has. Finally, the
+function returns the amount of money he wants to bet for this round.
