@@ -11,7 +11,7 @@ def displayHands(playerHand, dealerHand, showDealerHand):
     else:
         print('DEALER: ???')
         # Hide the dealer's first card:
-        #* (Line below) list concatenation applied
+        #* (Line below) list concatenation applied, creating a new list
         displayCards([constants.BACKSIDE] + dealerHand[1:])
     
     # Show the player's cards:
