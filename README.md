@@ -50,9 +50,10 @@ function returns the amount of money he wants to bet for this round.
 
 ### `getDeck()`
 It returns a list of 52 cards, each of them in the form of a tuple that has a
-value/rank (i.e. Ace, 2 - 10, Joker, Queen and King) and its suit (Club, 
-Diamond, Heart and Spade). Both values are strings. To make sure the deck is shuffled, `shuffle()` from the random module is used on the deck before
-returning it.
+rank (i.e. ace, number cards from 2 to 10 inclusive, joker, queen and king) 
+and its suit (club, diamond, heart and spade). Both values are strings. To make 
+sure the deck is shuffled, `shuffle()` from the random module is used on the 
+deck before returning it.
 
 ### `getHandValue()`
 It takes in either a player's or a dealer's hand and returns the aggregated
