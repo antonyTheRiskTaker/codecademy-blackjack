@@ -3,7 +3,7 @@ import constants
 def displayCards(cards):
     '''Display all the cards in the cards list.'''
 
-    # The text to display on each row (a list of five empty strings)
+    # The text to display on each row (a list of four empty strings)
     rows = ['' for _ in range(5)]
     
     for i, card in enumerate(cards):
