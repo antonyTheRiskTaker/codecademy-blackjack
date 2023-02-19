@@ -4,6 +4,8 @@ def displayCards(cards):
     '''Display all the cards in the cards list.'''
 
     # The text to display on each row (a list of five empty strings)
+    # The final empty character acts as a space separating the dealer's cards
+    # and the player's cards.
     rows = ['' for _ in range(5)]
     
     for i, card in enumerate(cards):
