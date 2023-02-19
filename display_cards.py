@@ -27,6 +27,4 @@ def displayCards(cards):
         print(row)
 
 if __name__ == '__main__':
-    # print(displayCards())
-    rows = ['' for _ in range(5)]
-    print(rows)
+    print(displayCards())
