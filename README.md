@@ -56,4 +56,4 @@ returning it.
 
 ### `getHandValue()`
 It takes in either a player's or a dealer's hand and returns the aggregated
-value of the inputed hand of cards.
+value of a given hand of cards.
