@@ -2,7 +2,9 @@ import constants
 
 def displayCards(cards):
     '''Display all the cards in the cards list.'''
-    rows = ['' for _ in range(5)] # The text to display on each row.
+
+    # The text to display on each row (a list of five empty strings)
+    rows = ['' for _ in range(5)]
     
     for i, card in enumerate(cards):
         rows[0] += ' ___  ' # Print the top line of the card.
