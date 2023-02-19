@@ -47,3 +47,13 @@ inside asks the player for the amount he wants to bet for a round of blackjack
 game. Checks are made to make sure the player doesn't enter anything other than
 integers. It also prevents the player can't bet more than he has. Finally, the
 function returns the amount of money he wants to bet for this round.
+
+### `getDeck()`
+It returns a list of 52 cards, each of them in the form of a tuple that has a
+value/rank (i.e. Ace, 2 - 10, Joker, Queen and King) and its suit (Club, 
+Diamond, Heart and Spade). Both values are strings. To make sure the deck is shuffled, `shuffle()` from the random module is used on the deck before
+returning it.
+
+### `getHandValue()`
+It takes in either a player's or a dealer's hand and returns the aggregated
+value of the inputed hand of cards.
