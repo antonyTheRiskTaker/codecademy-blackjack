@@ -70,3 +70,9 @@ A helper function used by the `displayHands()` function whose sole purpose is to
 take in either a player's or a dealer's hand and print them out on the terminal.
 
 ### `displayHands()`
+A function that runs the `displayCards()` helper function that implements the
+printing of the dealer and player's hands. Apart from the hand lists of the
+dealer and the player, the function also takes in a boolean (showDealerHand)
+that determines if the latest drawn card of the dealer should be hidden.
+
+### `getMove()`
