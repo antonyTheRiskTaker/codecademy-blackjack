@@ -14,5 +14,5 @@ def getMove(playerHand, money):
         move = input(movePrompt).upper()
         if move in ('H', 'S'):
             return move # Player has entered a valid move.
-        if move == 'D' and '(D)ouble down' in moves:
+        if (move == 'D') and ('(D)ouble down' in moves):
             return move # Player has entered a valid move.
