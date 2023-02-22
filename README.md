@@ -76,3 +76,8 @@ dealer and the player, the function also takes in a boolean (showDealerHand)
 that determines if the latest drawn card of the dealer should be hidden.
 
 ### `getMove()`
+It takes in two arguments: **1) the player's hand** and 
+**2) the money the player has left**. They are used to decide whether the player
+can double down. The function will make sure the player enters either one of
+the three possible values - "D" (double down), "H" (hit) and "S" (stand) - using
+an infinite loop. Finally, it returns the value. 
