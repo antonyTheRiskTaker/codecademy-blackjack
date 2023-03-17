@@ -80,4 +80,9 @@ It takes in two arguments: **1) the player's hand** and
 **2) the money the player has left**. They are used to decide whether the player
 can double down. The function will make sure the player enters either one of
 the three possible values - "D" (double down), "H" (hit) and "S" (stand) - using
-an infinite loop. Finally, it returns the value. 
+an infinite loop. Finally, it returns the value.
+
+### `main()`
+Finally, all those modules introduced are imported in the `main.py` file 
+and put together in the `main()` function which is used to run the game logic
+with two major game loops, one nested within another.
